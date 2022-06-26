@@ -1,0 +1,6 @@
+module ponte(Clock, Reset, Car_In, Car_Out);
+	input Clock, Reset, Car_In;
+	output Car_Out;
+	
+	
+endmodule

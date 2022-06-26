@@ -1,0 +1,6 @@
+module ponte_tb();
+	reg Clock, Reset, Car_In, Car_Out;
+	
+	wire hasCar;
+	
+endmodule

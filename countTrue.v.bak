@@ -1,0 +1,16 @@
+module countTrue(Clock, Reset, Car_In, Car_Out, hasCar);
+	input Clock, Reset, Car_In, Car_Out;
+	output integer hasCar;
+	
+	integer evaluator, up, down;
+				 
+	always @(posedge Clock) begin
+		if(!Reset) 
+			up <= Car_In ? 1 : 0;
+			down <= Car_Out ? -1 : 0;
+			evaluator <= evaluator + up + down;
+		else evaluator <= 0;
+		hasCar <= evaluator;
+	end 
+
+endmodule
